@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bde3fc"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="512dp"
+        android:layout_height="414dp"
+        android:background="#9dceef"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Calculate"
+        app:backgroundTint="@null"
+        android:background="@drawable/custombutton"
+        app:layout_constraintEnd_toEndOf="@+id/spinner1"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/spinner1"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="307dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Work Type"
+        android:text="Work Type"
+        app:layout_constraintEnd_toEndOf="@+id/editHours"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editHours"
+        app:layout_constraintTop_toBottomOf="@+id/editHours" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="303dp"
+        android:layout_height="62dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textCapSentences"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/editHours"
+        android:layout_width="306dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="hours"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/editName"
+        app:layout_constraintEnd_toStartOf="@+id/editName"
+        app:layout_constraintTop_toTopOf="@+id/editName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:text="Hours"
+        app:layout_constraintBottom_toBottomOf="@+id/editHours"
+        app:layout_constraintEnd_toStartOf="@+id/editHours"
+        app:layout_constraintTop_toTopOf="@+id/editHours" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="71dp"
+        android:layout_height="33dp"
+        android:text="Work Type"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner1"
+        app:layout_constraintEnd_toStartOf="@+id/spinner1"
+        app:layout_constraintTop_toTopOf="@+id/spinner1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rijndorp_WageCalculator</string>
+
+    <string-array name="worktype">
+
+        <item>Probationary</item>
+        <item>Part Time</item>
+        <item>Full Time</item>
+
+    </string-array>
+
+</resources>
